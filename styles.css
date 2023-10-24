@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:wght@100&display=swap');
+
+body{
+    font-family: 'Urbanist', sans-serif;
+    background-color: #451952;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#seleccionar-avatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.título{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 48px;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 24px;
+    margin: 12px;
+}
+
+.tarjetas, .tarjetas-ataque{ 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ .tarjeta-de-bloodpath{
+    flex-basis: calc(30%);
+    width: 96px;
+    height: 100px;
+    background: #AE445A;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;  
+    padding: 5px;
+    margin: 2px;
+ }
+
+ .tarjeta-de-bloodpath img{
+    width: 110px;
+ }
+
+ #boton-avatar{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+ }
+
+ input {
+   display: none;
+ }
+ 
+ input:checked + label {
+   background-color: #eba4b3;
+ }
+
+ input:hover + label{
+   background-color: #eba4b3;
+   width: 200px;
+   height: 110px;
+ }
+
+ #seleccionar-ataque{
+   background-image: url(./imagenes/fondooscuro.jpg);
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .boton-de-ataque{
+    background-color: #662549;
+    width: 96px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    margin: 4px;
+ }
+
+ .boton-de-ataque:hover{
+   background-color: #a8427a;
+ }
+
+ #mensajes{
+    width: 250px;
+    background: #AE445A;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ #boton-reiniciar{
+    border: transparent;
+    color: #451952;
+    background-color: transparent;
+    font-family: 'Urbanist', sans-serif;
+    margin-top: 16px;
+    font-size: 16px;
+ }
+
+ .ataques{
+   display: grid;
+   grid-template-columns: 140px 140px;
+ }
+
+ #vidas-jugador, #vidas-enemigo{
+   font-size: 32px;
+   margin-bottom: 0;
+ }
+ 
+ .pantalla-jugador, .pantalla-enemigo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+ }
+
+ @media (max-width: 400px) {
+   .tarjetas, .tarjetas-ataque {
+      flex-direction: column;
+   }
+   .tarjeta-de-bloodpath{
+      width: 190px;
+   }
+ }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="🇪🇸">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>BloodPath</title>
+    <script src="./js/bloodpath.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="seleccionar-avatar">
+        <h1 class="título">BloodPath</h1>
+
+        <!-- Creamos lista tipo botones para los avatares y creamos boton de confirmar seleccion de avatar -->
+        <h2 class="subtitulo">Elige tu avatar:</h2>
+
+        <div class="tarjetas">
+            <input type="radio" name="avatar" id="ninja"/>
+            <label class="tarjeta-de-bloodpath" for="ninja">
+                <p>Ninja</p>
+                <img src="./imagenes/ninja.png" alt="Ninja">
+            </label>
+    
+            <input type="radio" name="avatar" id="robot"/>
+            <label class="tarjeta-de-bloodpath" for="robot">
+                <p>Robot</p>
+                <img src="./imagenes/robot.png" alt="Robot">
+            </label>
+
+            <input type="radio" name="avatar" id="bioquimico"/>
+            <label class="tarjeta-de-bloodpath" for="bioquimico">
+                <p>Bioquímico</p>
+                <img src="./imagenes/bioquimico.png" alt="Bioquimico">
+            </label>
+
+            <input type="radio" name="avatar" id="policia"/>
+            <label class="tarjeta-de-bloodpath" for="policia">
+                <p>Policía</p>
+                <img src="./imagenes/policia.png" alt="Policia">
+            </label>
+
+            <input type="radio" name="avatar" id="santa-claus"/>
+            <label class="tarjeta-de-bloodpath" for="santa-claus">
+                <p>Santa Claus</p>
+                <img src="./imagenes/santaclaus.png" alt="Santa Claus">
+            </label>
+
+            <input type="radio" name="avatar" id="nina"/>
+            <label class="tarjeta-de-bloodpath" for="nina">
+                <p>Niña</p>
+                <img src="./imagenes/nina.png" alt="Niña">
+            </label>
+
+        </div>
+
+        <button id="boton-avatar">Seleccionar</button>
+    </section>
+
+
+    <section id="seleccionar-ataque">
+       
+        <h1 class="título">BloodPath</h1>
+
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+
+        <div class="tarjetas-ataque">
+            <button id="boton-bomba" class="boton-de-ataque">Bomba 💣</button>
+            <button id="boton-punal" class="boton-de-ataque">Puñal 🗡️</button>
+            <button id="boton-sedante" class="boton-de-ataque">Sedante 💉</button>
+        </div>
+
+            <div id="mensajes">
+                <p id="resultado">Mucha suerte</p>  
+
+                <section id="reiniciar">
+                        <button id="boton-reiniciar">REINICIAR</button>
+                </section>
+            </div>
+
+        <div class="ataques">
+            <div class="pantalla-jugador">
+                <p id="vidas-jugador">3</p>
+                <p id="avatar-jugador"></p>
+                <div id="ataques-del-jugador"></div>
+            </div>
+
+            <div class="pantalla-enemigo">
+                <p id="vidas-enemigo">3</p>
+                <p id="avatar-enemigo"></p>
+                <div id="ataques-del-enemigo"></div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>
